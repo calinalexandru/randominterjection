@@ -2,4 +2,4 @@
 > returns a random interjection 
 
 #### git commit example
-    alias gri='git commit -m "$(curl -s http://localhost:9666/)"'
+    alias gri='git commit -m "$(curl -s http://alexandrucalin.me:9666)"'
