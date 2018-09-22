@@ -10,11 +10,7 @@ const interject = require.main.require('./interject/interject')
 const port = process.env.PORT || 9666;
 
 router.get('/', function (req, res) {
-    res.send('go to /index.txt');
-});
-
-router.get('/index.txt', function (req, res) {
-    req.send(interject.getRandom());
+    res.send(interject.getRandom());
 });
 
 router.listen(port);
