@@ -8,3 +8,6 @@
     gri
     [master 320dd50] Gadzooks
     1 file changed, 1 insertion(+), 1 deletion(-)
+
+#### combo git usages
+    alias wha='git commit -m "$(curl -s http://whatthecommit.com/index.txt)"'
