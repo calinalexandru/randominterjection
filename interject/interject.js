@@ -7,7 +7,7 @@ const self = {
     getRandom: () => {
         const allInterjections = self.getAll();
         const luckyKey = Math.floor(Math.random() * allInterjections.length);
-        return allInterjections[luckyKey];
+        return allInterjections[luckyKey] + '!';
     },
 
     getAll: () => {
