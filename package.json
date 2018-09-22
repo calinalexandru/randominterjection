@@ -1,0 +1,23 @@
+{
+  "name": "getrandominterjection",
+  "version": "1.0.0",
+  "description": "Returns a random interjection",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "nodemon ./index.js",
+    "start": "node index.js"
+  },
+  "keywords": [
+    "get",
+    "random",
+    "interjection"
+  ],
+  "author": "Alexandru Calin",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.3",
+    "express-session": "^1.15.6",
+    "npm": "^6.4.1"
+  }
+}
