@@ -7,7 +7,7 @@ const self = {
     getRandom: () => {
         const roll = Math.floor(Math.random() * 100);
 
-        const interjects =  roll >= 50 ? self.getAll() : self.getSentences();
+        const interjects =  roll >= 30 ? self.getAll() : self.getSentences();
         const luckyKey = Math.floor(Math.random() * interjects.length);
         return interjects[luckyKey] + '!';
     },
