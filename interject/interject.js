@@ -5,9 +5,11 @@ const log = require.main.require('./helper/log');
 
 const self = {
     getRandom: () => {
-        const allInterjections = self.getAll();
-        const luckyKey = Math.floor(Math.random() * allInterjections.length);
-        return allInterjections[luckyKey] + '!';
+        const roll = Math.floor(Math.random() * 100);
+
+        const interjects =  roll >= 50 ? self.getAll() : self.getSentences();
+        const luckyKey = Math.floor(Math.random() * interjects.length);
+        return interjects[luckyKey] + '!';
     },
 
     getAll: () => {
